@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+<link rel="stylesheet" href="index.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+<form>
+    <label for="name">Person's name</label>
+    <div class="name">
+    <input type="text" class="first-name" name="first-name" minlength="1"  required placeholder="First">
+    <input type="text" class="last-name" name="last-name" minlength="1" required placeholder="Last">
+    </div>
+    <div class="contact-no-container">
+        <label for="name">Contact no</label>
+        <input type="text" class="contact-no" name="contact-no" required
+            maxlength="10" minlength="10" >
+    </div>
+    <button name="save" type="submit" > Save </button>
+</form>
+<input oninput="handleInput()" name="search" class="search" />
+<table>
+    <tr>
+      <th>SN</th>
+      <th onclick="sort()">Name</th>
+      <th>Contact</th>
+      <th>Delete</th>
+    </tr>
+    </table>
+<script src="index.js"></script>
+</body>
+</html>
